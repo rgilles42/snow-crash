@@ -1,10 +1,10 @@
-#level00
+# level00
 After a tedious VM setup, I landed in the first session of my journey.
 In the home folder of level00, specifically.
 
 Alas! An `ls -lah` shows strictly nothing. I shall start like I imagine I'll end: clueless and alone.
 
-#Resolution
+# Resolution
 Fine! If there's nothing relevant to my interest at hand, I'll scan the whole damn thing for any files I could own.
 
 `find / -path /proc -prune -o -user user00 -print 2>/dev/null`
