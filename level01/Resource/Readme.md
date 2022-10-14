@@ -15,7 +15,9 @@ On all users, the "x" on the second field of the string indicates that the passw
 
 All users? No! Only one indomitable user still holds out against the common good practice of computer security.
 And of course, this user is of the highest relevance for us.
+
 `flag01:42hDRfypTqqnw:3001:3001::/home/flag/flag01:/bin/bash`
+
 What that means is that the password hash of the user we need is directly embedded into a file we can read.
 
 That means it's password bruteforcing time. We're gonna use John.
