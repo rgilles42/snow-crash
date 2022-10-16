@@ -1,11 +1,14 @@
 # level04
 We arrive in the home folder of user `level04` where a perl script called `level04.pl` awaits us.
+
 Very much like before, its UID is `flag04`, its GID is `level04` and its perms are `rws r-s r-x`
+
 
 Opening it up, it looks like a frugal CGI program, which will be joined via a webserver and would return the output of `echo <something>` on both STDIN and STDERR.
 
 # Resolution
 A commentary in the program implies it should be joinable on port 4747 of localhost.
+
 Sure enough, a `netstat -pant` tells us that there is something running on port 4747 already!
 
 Let's connect to it !
