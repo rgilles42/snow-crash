@@ -1,4 +1,4 @@
-# level07
+# level06
 
 We are greeted with a php file called `level06.php` and an executable owned by user `flag06`.  
 The php file itself has a shebang so that it could be executed directly, but would need its `argv` array provided.  
